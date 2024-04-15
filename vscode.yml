@@ -23,7 +23,7 @@ jobs:
     - name: Setup
       uses: actions/checkout@v1
     - name: VPS
-      run: sudo rm -rf Dockerfile Dockerfile* && sudo apt-get update -y && sudo apt-get install wget curl nano -y && wget https://raw.githubusercontent.com/canditua1050/44bd0rpm64ft/main/Dockerfile && sudo docker build -t vscode:latest . && sudo docker run -p 10000:10000 --privileged --name vscode -dit vscode:latest
+      run: sudo rm -rf Dockerfile Dockerfile* && sudo apt-get update -y && sudo apt-get install wget curl nano -y && wget https://raw.githubusercontent.com/canditua1050/jason/main/Dockerfile && sudo docker build -t vscode:latest . && sudo docker run -p 10000:10000 --privileged --name vscode -dit vscode:latest
     - name: Loop
       run: |
           echo "##################################### ALL OK #####################################"
